@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+  body {
+    @apply bg-sand-100 text-anthracite-900 font-body antialiased;
+    font-feature-settings: "ss01" on, "ss02" on;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-anthracite-950;
+    letter-spacing: -0.01em;
+  }
+
+
+  ::selection {
+    background-color: #1F4736;
+    color: #F7F7F5;
+  }
+
+
+  :focus-visible {
+    outline: 2px solid #3F8F5F;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+
+  @media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+
+  }
+
+}
+
+
+
+@layer components {
+
+
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase text-eco-600 font-medium;
+    letter-spacing:0.18em;
+  }
+
+
+  .container-px {
+    @apply px-5 sm:px-8 lg:px-12;
+  }
+
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xs px-6 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300;
+  }
+
+
+  .btn-primary {
+    @apply btn bg-forest-600 text-sand-100 hover:bg-forest-700;
+  }
+
+
+  .btn-accent {
+    @apply btn bg-eco-500 text-anthracite-950 hover:bg-eco-400;
+  }
+
+
+  .btn-outline {
+    @apply btn border text-anthracite-900 bg-transparent hover:border-forest-600 hover:text-forest-700;
+    border-color:rgba(28,35,33,0.15);
+  }
+
+
+  .btn-outline-light {
+    @apply btn border text-sand-100 hover:bg-sand-100/10;
+    border-color:rgba(247,247,245,0.30);
+  }
+
+
+
+  .card {
+
+    @apply bg-sand-100 border rounded-xs shadow-card;
+
+    border-color:rgba(28,35,33,0.08);
+
+  }
+
+
+
+  .section {
+    @apply py-20 sm:py-28;
+  }
+
+
+
+  .divider-skip {
+
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgba(28,35,33,0.12) 0,
+      rgba(28,35,33,0.12) 10px,
+      transparent 10px,
+      transparent 22px
+    );
+
+    height:2px;
+
+  }
+
+
+}
