@@ -1,5 +1,16 @@
 // data/skips.ts
-export const skips = [
+export interface Skip {
+  id: number;
+  size: string;
+  price: string;
+  description: string;
+  dimensions: string;
+  tag: string;
+  image: string;
+  suitableFor: string[];
+}
+
+export const skips: Skip[] = [
   {
     id: 1,
     size: "3m³",
@@ -58,22 +69,4 @@ export const pricing = [
   { size: "10m³", mixed: "525 €", gravel: "395 €" },
   { size: "15m³", mixed: "685 €", gravel: "—" },
   { size: "30m³", mixed: "1 185 €", gravel: "—" },
-];
-
-export const skipCategories = [
-  { id: "mixed", label: "Déchets mélangés" },
-  { id: "gravel", label: "Gravats" },
-  { id: "green", label: "Déchets verts" },
-  { id: "wood", label: "Bois" },
-  { id: "metal", label: "Métaux" },
-  { id: "cardboard", label: "Carton" },
-  { id: "plaster", label: "Plâtre" },
-  { id: "industrial", label: "Déchets industriels" },
-];
-
-export const skipFeatures = [
-  { id: "delivery", label: "Livraison express" },
-  { id: "collection", label: "Collecte programmée" },
-  { id: "recycling", label: "Valorisation des déchets" },
-  { id: "certified", label: "Filières agréées" },
 ];

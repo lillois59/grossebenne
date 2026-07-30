@@ -43,7 +43,7 @@ export default function WasteCategories() {
 
               <div className="mt-5 pt-4 border-t border-gray-100">
                 <div className="flex flex-wrap gap-2">
-                  {skip.suitableFor && skip.suitableFor.slice(0, 2).map((use, index) => (
+                  {skip.suitableFor.slice(0, 2).map((use, index) => (
                     <span key={index} className="text-xs bg-gray-100 px-2 py-1 rounded-sm text-gray-600">
                       {use}
                     </span>

@@ -1,30 +1,37 @@
+// components/ui/SectionHeading.tsx
+interface SectionHeadingProps {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  align?: 'left' | 'center' | 'right';
+  className?: string;
+}
+
 export default function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "left",
-  light = false,
-}: {
-  eyebrow?: string;
-  title: string;
-  description?: string;
-  align?: "left" | "center";
-  light?: boolean;
-}) {
+  align = 'left',
+  className = '',
+}: SectionHeadingProps) {
+  const alignClasses = {
+    left: 'text-left',
+    center: 'text-center',
+    right: 'text-right',
+  };
+
   return (
-    <div className={`max-w-2xl ${align === "center" ? "mx-auto text-center" : ""}`}>
+    <div className={`${alignClasses[align]} ${className}`}>
       {eyebrow && (
-        <p className={`eyebrow mb-3 ${light ? "text-eco-400" : ""}`}>{eyebrow}</p>
+        <span className="inline-block text-sm font-semibold text-[#0f5e3e] uppercase tracking-wider bg-[#0f5e3e]/10 px-4 py-1.5 rounded-sm mb-4">
+          {eyebrow}
+        </span>
       )}
-      <h2
-        className={`text-3xl sm:text-4xl font-semibold leading-[1.1] ${
-          light ? "text-sand-100" : "text-anthracite-950"
-        }`}
-      >
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
         {title}
       </h2>
       {description && (
-        <p className={`mt-4 text-base leading-relaxed ${light ? "text-sand-300/80" : "text-anthracite-600"}`}>
+        <p className="text-lg text-gray-500 max-w-3xl mx-auto">
           {description}
         </p>
       )}
