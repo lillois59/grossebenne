@@ -1,4 +1,4 @@
-﻿export const siteConfig = {
+export const siteConfig = {
   name: "NordBennes.fr | by Renovimo",
   shortName: "NordBennes.fr",
 
@@ -7,8 +7,8 @@
 
   url: "https://nordbennes.fr",
 
-  phone: "03 21 00 00 00",
-  phoneHref: "+33321000000",
+  phone: "+33 6 42 24 08 41",
+  phoneHref: "+33642240841",
 
   emergencyPhone: "06 00 00 00 00",
 

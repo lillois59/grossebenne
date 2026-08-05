@@ -1,4 +1,4 @@
-﻿// components/layout/MobileMenu.tsx
+// components/layout/MobileMenu.tsx
 'use client';
 
 import { useState } from 'react';
@@ -68,7 +68,7 @@ export default function MobileMenu() {
 
           <div className="mt-8 pt-8 border-t border-gray-100">
             <a
-              href="tel:0321000000"
+              href="tel:+33642240841"
               className="block bg-[#0f5e3e] text-white text-center py-3 rounded-sm font-semibold hover:bg-[#1a7a52] transition"
             >
               +33 6 42 24 08 41

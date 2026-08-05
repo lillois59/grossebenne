@@ -46,7 +46,7 @@ export default function Hero() {
               </Link>
               
               <a
-                href="tel:0321000000"
+                href="tel:+33642240841"
                 className="flex items-center gap-2 text-white px-5 sm:px-6 py-3 sm:py-3.5 rounded-full text-sm sm:text-lg font-semibold border-2 border-white/20 hover:bg-white/10 transition-all"
               >
                 <Phone className="w-4 h-4" />
