@@ -1,4 +1,4 @@
-// components/layout/Footer.tsx
+﻿// components/layout/Footer.tsx
 import Link from 'next/link';
 
 export default function Footer() {
@@ -8,9 +8,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <span className="text-xl font-bold text-white">DIB-TRADE</span>
+            <span className="text-xl font-bold text-white">NordBennes.fr</span>
             <p className="text-sm text-gray-500 mt-2">
-              Location de bennes et valorisation des déchets dans les Hauts-de-France.
+              Location de bennes et valorisation des dÃ©chets dans les Hauts-de-France.
             </p>
             <p className="text-xs text-gray-600 mt-4">
               Placeholder: Grand-Place, Arras
@@ -34,7 +34,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/services" className="hover:text-white transition">Location de bennes</Link></li>
-              <li><Link href="/services" className="hover:text-white transition">Collecte de déchets</Link></li>
+              <li><Link href="/services" className="hover:text-white transition">Collecte de dÃ©chets</Link></li>
               <li><Link href="/services" className="hover:text-white transition">Recyclage</Link></li>
               <li><Link href="/services" className="hover:text-white transition">Valorisation</Link></li>
             </ul>
@@ -53,8 +53,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:contact@dib-trade.fr" className="hover:text-white transition">
-                  contact@dib-trade.fr
+                <a href="mailto:contact@nordbennes.fr" className="hover:text-white transition">
+                  contact@nordbennes.fr
                 </a>
               </li>
             </ul>
@@ -103,10 +103,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
-          <p>© {new Date().getFullYear()} DIB-TRADE Hauts-de-France. Tous droits réservés.</p>
+          <p>Â© {new Date().getFullYear()} NordBennes.fr | by Renovimo. Tous droits rÃ©servÃ©s.</p>
           <div className="flex justify-center gap-4 mt-2">
-            <Link href="/mentions-legales" className="hover:text-white transition">Mentions légales</Link>
-            <Link href="/confidentialite" className="hover:text-white transition">Confidentialité</Link>
+            <Link href="/mentions-legales" className="hover:text-white transition">Mentions lÃ©gales</Link>
+            <Link href="/confidentialite" className="hover:text-white transition">ConfidentialitÃ©</Link>
             <Link href="/cookies" className="hover:text-white transition">Cookies</Link>
           </div>
         </div>

@@ -1,6 +1,6 @@
-// app/page.tsx
+﻿// app/page.tsx
 export default function Home() {
-  // Icônes SVG professionnelles
+  // IcÃ´nes SVG professionnelles
   const IconTruck = () => (
     <svg className="w-8 h-8 text-[#0f5e3e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 18a2 2 0 01-2 2m10-2a2 2 0 01-2 2m-6-2a2 2 0 01-2 2m10-2a2 2 0 01-2 2m-6-2a2 2 0 01-2 2m-6-2a2 2 0 01-2 2m0 0a2 2 0 01-2-2v-8a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2m0 0a2 2 0 01-2-2v-4a2 2 0 012-2m0 0V6a2 2 0 012-2h4a2 2 0 012 2v12a2 2 0 01-2 2" />
@@ -38,40 +38,40 @@ export default function Home() {
   );
 
   const services = [
-    { icon: IconTruck, title: "Location de bennes", desc: "De 3m³ à 30m³, livraison express sur chantier dans les Hauts-de-France." },
-    { icon: IconRecycle, title: "Valorisation & Recyclage", desc: "Filières agréées pour le traitement et le recyclage de tous vos déchets." },
-    { icon: IconBuilding, title: "Déchets de chantier", desc: "Collecte et traitement des gravats, béton, terre et matériaux de construction." },
-    { icon: IconLeaf, title: "Déchets verts", desc: "Bennes spécifiques pour les déchets de jardin, tailles, feuilles et branches." },
-    { icon: IconIndustry, title: "Déchets industriels", desc: "Solutions sur mesure pour l'industrie, la logistique et les entreprises." },
-    { icon: IconDocument, title: "Devis en 2h", desc: "Réponse rapide, tarifs compétitifs et accompagnement personnalisé." },
+    { icon: IconTruck, title: "Location de bennes", desc: "De 3mÂ³ Ã  30mÂ³, livraison express sur chantier dans les Hauts-de-France." },
+    { icon: IconRecycle, title: "Valorisation & Recyclage", desc: "FiliÃ¨res agrÃ©Ã©es pour le traitement et le recyclage de tous vos dÃ©chets." },
+    { icon: IconBuilding, title: "DÃ©chets de chantier", desc: "Collecte et traitement des gravats, bÃ©ton, terre et matÃ©riaux de construction." },
+    { icon: IconLeaf, title: "DÃ©chets verts", desc: "Bennes spÃ©cifiques pour les dÃ©chets de jardin, tailles, feuilles et branches." },
+    { icon: IconIndustry, title: "DÃ©chets industriels", desc: "Solutions sur mesure pour l'industrie, la logistique et les entreprises." },
+    { icon: IconDocument, title: "Devis en 2h", desc: "RÃ©ponse rapide, tarifs compÃ©titifs et accompagnement personnalisÃ©." },
   ];
 
   const skips = [
-    { size: "3m³", price: "295 €", desc: "Idéal pour les petites rénovations", dim: "1.8 × 1.4 × 1.2 m", tag: "Salle de bain" },
-    { size: "8m³", price: "459 €", desc: "Parfait pour les travaux moyens", dim: "3.6 × 1.8 × 1.5 m", tag: "Maison" },
-    { size: "10m³", price: "525 €", desc: "Pour les rénovations complètes", dim: "4.2 × 2.0 × 1.6 m", tag: "Rénovation" },
-    { size: "15m³", price: "685 €", desc: "Pour les grands chantiers", dim: "5.0 × 2.2 × 1.8 m", tag: "Construction" },
+    { size: "3mÂ³", price: "295 â‚¬", desc: "IdÃ©al pour les petites rÃ©novations", dim: "1.8 Ã— 1.4 Ã— 1.2 m", tag: "Salle de bain" },
+    { size: "8mÂ³", price: "459 â‚¬", desc: "Parfait pour les travaux moyens", dim: "3.6 Ã— 1.8 Ã— 1.5 m", tag: "Maison" },
+    { size: "10mÂ³", price: "525 â‚¬", desc: "Pour les rÃ©novations complÃ¨tes", dim: "4.2 Ã— 2.0 Ã— 1.6 m", tag: "RÃ©novation" },
+    { size: "15mÂ³", price: "685 â‚¬", desc: "Pour les grands chantiers", dim: "5.0 Ã— 2.2 Ã— 1.8 m", tag: "Construction" },
   ];
 
   const pricing = [
-    { size: "3m³", mixed: "295 €", gravel: "275 €" },
-    { size: "8m³", mixed: "459 €", gravel: "349 €" },
-    { size: "10m³", mixed: "525 €", gravel: "395 €" },
-    { size: "15m³", mixed: "685 €", gravel: "—" },
-    { size: "30m³", mixed: "1 185 €", gravel: "—" },
+    { size: "3mÂ³", mixed: "295 â‚¬", gravel: "275 â‚¬" },
+    { size: "8mÂ³", mixed: "459 â‚¬", gravel: "349 â‚¬" },
+    { size: "10mÂ³", mixed: "525 â‚¬", gravel: "395 â‚¬" },
+    { size: "15mÂ³", mixed: "685 â‚¬", gravel: "â€”" },
+    { size: "30mÂ³", mixed: "1 185 â‚¬", gravel: "â€”" },
   ];
 
   const testimonials = [
-    { name: "SARL Bâtir", role: "Entreprise de construction", text: "Réactivité et professionnalisme. Benne livrée en moins de 4 heures. Un service qui nous fait gagner un temps précieux sur nos chantiers." },
-    { name: "Les Jardins d'Artois", role: "Paysagiste", text: "Un partenaire fiable pour nos chantiers de rénovation. La collecte des déchets verts est rapide et efficace." },
-    { name: "Mairie de Liévin", role: "Collectivité locale", text: "Devis clair, équipe disponible et à l'écoute. Une collaboration exemplaire pour la gestion des déchets de notre commune." },
+    { name: "SARL BÃ¢tir", role: "Entreprise de construction", text: "RÃ©activitÃ© et professionnalisme. Benne livrÃ©e en moins de 4 heures. Un service qui nous fait gagner un temps prÃ©cieux sur nos chantiers." },
+    { name: "Les Jardins d'Artois", role: "Paysagiste", text: "Un partenaire fiable pour nos chantiers de rÃ©novation. La collecte des dÃ©chets verts est rapide et efficace." },
+    { name: "Mairie de LiÃ©vin", role: "CollectivitÃ© locale", text: "Devis clair, Ã©quipe disponible et Ã  l'Ã©coute. Une collaboration exemplaire pour la gestion des dÃ©chets de notre commune." },
   ];
 
   const faqs = [
-    { q: "Quels types de déchets acceptez-vous ?", a: "Nous acceptons les déchets mélangés, gravats, déchets verts, bois, métaux, carton et plâtre. Les déchets dangereux (amiante, produits chimiques) ne sont pas acceptés." },
-    { q: "Quel est le délai de livraison ?", a: "Nous livrons votre benne sous 4 heures en moyenne dans toute la région Hauts-de-France. Un délai précis vous sera communiqué lors de la confirmation de votre commande." },
-    { q: "Ai-je besoin d'une autorisation ?", a: "Pour une benne sur voie publique, vous devez obtenir une autorisation de la mairie. Nous vous accompagnons dans ces démarches si nécessaire." },
-    { q: "Quelle est la durée de location ?", a: "La durée standard est de 3 à 7 jours. Des prolongations sont possibles selon vos besoins." },
+    { q: "Quels types de dÃ©chets acceptez-vous ?", a: "Nous acceptons les dÃ©chets mÃ©langÃ©s, gravats, dÃ©chets verts, bois, mÃ©taux, carton et plÃ¢tre. Les dÃ©chets dangereux (amiante, produits chimiques) ne sont pas acceptÃ©s." },
+    { q: "Quel est le dÃ©lai de livraison ?", a: "Nous livrons votre benne sous 4 heures en moyenne dans toute la rÃ©gion Hauts-de-France. Un dÃ©lai prÃ©cis vous sera communiquÃ© lors de la confirmation de votre commande." },
+    { q: "Ai-je besoin d'une autorisation ?", a: "Pour une benne sur voie publique, vous devez obtenir une autorisation de la mairie. Nous vous accompagnons dans ces dÃ©marches si nÃ©cessaire." },
+    { q: "Quelle est la durÃ©e de location ?", a: "La durÃ©e standard est de 3 Ã  7 jours. Des prolongations sont possibles selon vos besoins." },
   ];
 
   return (
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="container mx-auto px-6 max-w-7xl relative z-10 py-12">
           <div className="max-w-2xl">
             <div className="inline-block border-l-4 border-[#0f5e3e] pl-4 mb-6">
-              <span className="text-sm font-medium text-[#0f5e3e] uppercase tracking-wider">Location de bennes · Hauts-de-France</span>
+              <span className="text-sm font-medium text-[#0f5e3e] uppercase tracking-wider">Location de bennes Â· Hauts-de-France</span>
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
               Votre partenaire pour la
@@ -93,8 +93,8 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg text-white/70 mt-6 max-w-lg leading-relaxed">
-              Devis personnalisé en 2 heures · Livraison express · Filières agréées · 
-              De 3 à 30 m³ pour tous vos chantiers
+              Devis personnalisÃ© en 2 heures Â· Livraison express Â· FiliÃ¨res agrÃ©Ã©es Â· 
+              De 3 Ã  30 mÂ³ pour tous vos chantiers
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <a href="#devis" className="bg-[#0f5e3e] text-white px-8 py-3.5 rounded font-semibold hover:bg-[#1a7a52] transition shadow-lg shadow-[#0f5e3e]/25">
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-[#0f5e3e]">1 500+</div>
-              <p className="text-sm text-gray-500 mt-1">Bennes livrées</p>
+              <p className="text-sm text-gray-500 mt-1">Bennes livrÃ©es</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-[#0f5e3e]">98%</div>
@@ -137,11 +137,11 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-[#0f5e3e]">4h</div>
-              <p className="text-sm text-gray-500 mt-1">Délai moyen de livraison</p>
+              <p className="text-sm text-gray-500 mt-1">DÃ©lai moyen de livraison</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-[#0f5e3e]">100%</div>
-              <p className="text-sm text-gray-500 mt-1">Valorisation des déchets</p>
+              <p className="text-sm text-gray-500 mt-1">Valorisation des dÃ©chets</p>
             </div>
           </div>
         </div>
@@ -155,11 +155,11 @@ export default function Home() {
               Nos services
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-              Des solutions complètes pour tous vos besoins
+              Des solutions complÃ¨tes pour tous vos besoins
             </h2>
             <p className="text-lg text-gray-500">
-              Collecte, location et valorisation des déchets pour les particuliers,
-              professionnels et collectivités
+              Collecte, location et valorisation des dÃ©chets pour les particuliers,
+              professionnels et collectivitÃ©s
             </p>
           </div>
 
@@ -197,7 +197,7 @@ export default function Home() {
               Des bennes pour tous vos projets
             </h2>
             <p className="text-lg text-gray-500">
-              Choisissez la capacité adaptée à vos besoins, du petit chantier aux grands travaux
+              Choisissez la capacitÃ© adaptÃ©e Ã  vos besoins, du petit chantier aux grands travaux
             </p>
           </div>
 
@@ -227,7 +227,7 @@ export default function Home() {
                   <p className="text-sm text-gray-500 mb-1">{item.desc}</p>
                   <p className="text-xs text-gray-400">{item.dim}</p>
                   <a href="#" className="mt-4 w-full block text-center bg-gray-50 hover:bg-[#0f5e3e] hover:text-white text-gray-700 font-medium py-2.5 rounded-sm transition-all text-sm border border-gray-200 hover:border-[#0f5e3e]">
-                    Réserver
+                    RÃ©server
                   </a>
                 </div>
               </div>
@@ -247,7 +247,7 @@ export default function Home() {
               Des prix transparents
             </h2>
             <p className="text-lg text-gray-500">
-              Tarifs indicatifs hors taxes. Contactez-nous pour un devis personnalisé
+              Tarifs indicatifs hors taxes. Contactez-nous pour un devis personnalisÃ©
             </p>
           </div>
 
@@ -257,20 +257,20 @@ export default function Home() {
                 <div>
                   <span className="text-xl font-bold text-gray-900">{item.size}</span>
                   <div className="flex gap-4 mt-1">
-                    <span className="text-xs font-medium text-gray-500">Mélangé: <span className="text-[#0f5e3e] font-bold">{item.mixed}</span></span>
-                    {item.gravel !== "—" && (
+                    <span className="text-xs font-medium text-gray-500">MÃ©langÃ©: <span className="text-[#0f5e3e] font-bold">{item.mixed}</span></span>
+                    {item.gravel !== "â€”" && (
                       <span className="text-xs font-medium text-gray-500">Gravats: <span className="text-[#0f5e3e] font-bold">{item.gravel}</span></span>
                     )}
                   </div>
                 </div>
                 <a href="#devis" className="text-[#0f5e3e] font-medium text-sm hover:underline">
-                  Demander un devis →
+                  Demander un devis â†’
                 </a>
               </div>
             ))}
           </div>
           <p className="text-center text-xs text-gray-400 mt-6">
-            Prix indicatifs pouvant varier selon la localisation du chantier, la durée de location et la nature des déchets.
+            Prix indicatifs pouvant varier selon la localisation du chantier, la durÃ©e de location et la nature des dÃ©chets.
           </p>
         </div>
       </section>
@@ -284,18 +284,18 @@ export default function Home() {
                 Devis en ligne
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-                Obtenez votre devis personnalisé en quelques minutes
+                Obtenez votre devis personnalisÃ© en quelques minutes
               </h2>
               <p className="text-gray-500 mb-8">
                 Location rapide de bennes partout dans les Hauts-de-France.
               </p>
               <div className="space-y-6">
                 {[
-                  "Complétez votre demande de devis",
-                  "Notre équipe vous répond sous 2 heures ouvrées",
-                  "Validez votre commande via notre plateforme sécurisée",
-                  "Nous livrons votre benne à la date convenue",
-                  "Nous récupérons les déchets et assurons leur traitement"
+                  "ComplÃ©tez votre demande de devis",
+                  "Notre Ã©quipe vous rÃ©pond sous 2 heures ouvrÃ©es",
+                  "Validez votre commande via notre plateforme sÃ©curisÃ©e",
+                  "Nous livrons votre benne Ã  la date convenue",
+                  "Nous rÃ©cupÃ©rons les dÃ©chets et assurons leur traitement"
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-4">
                     <div className="w-8 h-8 rounded-sm bg-[#0f5e3e]/10 flex items-center justify-center text-[#0f5e3e] font-bold text-sm flex-shrink-0">
@@ -317,16 +317,16 @@ export default function Home() {
                     <select className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition">
                       <option>Particulier</option>
                       <option>Professionnel</option>
-                      <option>Collectivité</option>
+                      <option>CollectivitÃ©</option>
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Société</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">SociÃ©tÃ©</label>
                     <input type="text" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" placeholder="Nom de l'entreprise" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Prénom</label>
-                    <input type="text" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" placeholder="Prénom" required />
+                    <label className="block text-sm font-medium text-gray-700 mb-1">PrÃ©nom</label>
+                    <input type="text" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" placeholder="PrÃ©nom" required />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Nom</label>
@@ -337,7 +337,7 @@ export default function Home() {
                     <input type="email" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" placeholder="email@exemple.fr" required />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Téléphone</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">TÃ©lÃ©phone</label>
                     <input type="tel" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" placeholder="06 00 00 00 00" />
                   </div>
                   <div>
@@ -349,23 +349,23 @@ export default function Home() {
                     <input type="text" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" placeholder="Arras" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Benne souhaitée</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Benne souhaitÃ©e</label>
                     <select className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition">
-                      <option>3 m³</option>
-                      <option>8 m³</option>
-                      <option>10 m³</option>
-                      <option>15 m³</option>
-                      <option>30 m³</option>
+                      <option>3 mÂ³</option>
+                      <option>8 mÂ³</option>
+                      <option>10 mÂ³</option>
+                      <option>15 mÂ³</option>
+                      <option>30 mÂ³</option>
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Type de déchet</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Type de dÃ©chet</label>
                     <select className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition">
-                      <option>Déchets mélangés</option>
+                      <option>DÃ©chets mÃ©langÃ©s</option>
                       <option>Gravats</option>
-                      <option>Déchets verts</option>
+                      <option>DÃ©chets verts</option>
                       <option>Bois</option>
-                      <option>Métaux</option>
+                      <option>MÃ©taux</option>
                       <option>Carton</option>
                     </select>
                   </div>
@@ -374,17 +374,17 @@ export default function Home() {
                     <input type="date" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Date d'enlèvement</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Date d'enlÃ¨vement</label>
                     <input type="date" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                  <textarea rows={3} className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" placeholder="Informations complémentaires..."></textarea>
+                  <textarea rows={3} className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition" placeholder="Informations complÃ©mentaires..."></textarea>
                 </div>
                 <div className="flex items-start gap-3">
                   <input type="checkbox" required className="mt-1 w-4 h-4 border-gray-300 rounded-sm focus:ring-[#0f5e3e]" />
-                  <span className="text-sm text-gray-500">J'accepte que mes données soient utilisées pour le traitement de ma demande.</span>
+                  <span className="text-sm text-gray-500">J'accepte que mes donnÃ©es soient utilisÃ©es pour le traitement de ma demande.</span>
                 </div>
                 <button type="submit" className="w-full bg-[#0f5e3e] text-white py-3.5 rounded-sm text-lg font-semibold hover:bg-[#1a7a52] transition shadow-lg shadow-[#0f5e3e]/25">
                   Envoyer ma demande de devis
@@ -400,7 +400,7 @@ export default function Home() {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block text-sm font-semibold text-[#0f5e3e] uppercase tracking-wider bg-[#0f5e3e]/10 px-4 py-1.5 rounded-sm mb-4">
-              Témoignages
+              TÃ©moignages
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
               Ils nous font confiance
@@ -436,13 +436,13 @@ export default function Home() {
                 Notre zone
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                Nous couvrons toute la région Hauts-de-France
+                Nous couvrons toute la rÃ©gion Hauts-de-France
               </h2>
               <p className="text-lg text-gray-500 mb-6">
-                DIB-TRADE intervient sur l'ensemble du territoire, avec une base opérationnelle à Arras.
+                NordBennes.fr intervient sur l'ensemble du territoire, avec une base opÃ©rationnelle Ã  Arras.
               </p>
               <div className="grid grid-cols-2 gap-3">
-                {["Arras", "Lille", "Valenciennes", "Amiens", "Béthune", "Dunkerque"].map((city) => (
+                {["Arras", "Lille", "Valenciennes", "Amiens", "BÃ©thune", "Dunkerque"].map((city) => (
                   <div key={city} className="flex items-center gap-2 text-sm text-gray-600">
                     <svg className="w-4 h-4 text-[#0f5e3e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -458,7 +458,7 @@ export default function Home() {
                   <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                   </svg>
-                  <p>Carte de la région Hauts-de-France</p>
+                  <p>Carte de la rÃ©gion Hauts-de-France</p>
                   <p className="text-sm text-gray-400">(Carte interactive)</p>
                 </div>
               </div>
@@ -475,7 +475,7 @@ export default function Home() {
               FAQ
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-              Questions fréquentes
+              Questions frÃ©quentes
             </h2>
           </div>
           <div className="space-y-4">

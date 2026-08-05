@@ -1,4 +1,4 @@
-// components/layout/Header.tsx
+﻿// components/layout/Header.tsx
 'use client';
 
 import { useState } from 'react';
@@ -29,7 +29,7 @@ export default function Header() {
                 DT
               </div>
               <div>
-                <span className="text-xl font-bold text-[#0f5e3e] tracking-tight">DIB-TRADE</span>
+                <span className="text-xl font-bold text-[#0f5e3e] tracking-tight">NordBennes.fr</span>
                 <span className="block text-[9px] font-medium text-gray-400 tracking-[0.15em] uppercase">
                   Hauts-de-France
                 </span>
@@ -106,13 +106,13 @@ export default function Header() {
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          {/* En-tête du menu */}
+          {/* En-tÃªte du menu */}
           <div className="flex items-center justify-between p-6 border-b border-gray-100">
             <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2">
               <div className="w-10 h-10 bg-gradient-to-br from-[#0f5e3e] to-[#1a8a5a] rounded-xl flex items-center justify-center text-white font-bold text-lg">
                 DT
               </div>
-              <span className="text-xl font-bold text-[#0f5e3e] tracking-tight">DIB-TRADE</span>
+              <span className="text-xl font-bold text-[#0f5e3e] tracking-tight">NordBennes.fr</span>
             </Link>
             <button
               onClick={() => setIsMenuOpen(false)}
@@ -140,7 +140,7 @@ export default function Header() {
                       }`}
                     >
                       <span>{item.label}</span>
-                      <span className="text-gray-400 text-sm">→</span>
+                      <span className="text-gray-400 text-sm">â†’</span>
                     </Link>
                   </li>
                 );
@@ -169,7 +169,7 @@ export default function Header() {
                 Demander un devis
               </Link>
 
-              {/* Réseaux sociaux */}
+              {/* RÃ©seaux sociaux */}
               <div className="flex gap-4 mt-6">
                 <a
                   href="https://linkedin.com/company/dib-trade"

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import Container from "@/components/ui/Container";
@@ -14,8 +14,8 @@ export default function ServicesOverview() {
       <Container>
         <SectionHeading
           eyebrow="Nos solutions"
-          title="Des solutions adaptées à chaque type de déchet"
-          description="DIB-TRADE accompagne les particuliers, entreprises et collectivités avec des solutions de collecte et de valorisation adaptées."
+          title="Des solutions adaptÃ©es Ã  chaque type de dÃ©chet"
+          description="NordBennes.fr accompagne les particuliers, entreprises et collectivitÃ©s avec des solutions de collecte et de valorisation adaptÃ©es."
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

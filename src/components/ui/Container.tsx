@@ -16,7 +16,7 @@ export default function Container({
   padding = true,
   as: Component = 'div',
 }: ContainerProps) {
-  const maxWidthClasses = {
+  const maxWidthClasses: Record<string, string> = {
     sm: 'max-w-screen-sm',
     md: 'max-w-screen-md',
     lg: 'max-w-screen-lg',

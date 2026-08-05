@@ -1,4 +1,4 @@
-// components/layout/MobileMenu.tsx
+﻿// components/layout/MobileMenu.tsx
 'use client';
 
 import { useState } from 'react';
@@ -42,7 +42,7 @@ export default function MobileMenu() {
         }`}
       >
         <div className="flex justify-between items-center p-6 border-b border-gray-100">
-          <span className="text-xl font-bold text-[#0f5e3e]">DIB-TRADE</span>
+          <span className="text-xl font-bold text-[#0f5e3e]">NordBennes.fr</span>
           <button
             onClick={() => setIsOpen(false)}
             className="p-2 hover:bg-gray-100 rounded-full transition"
@@ -71,7 +71,7 @@ export default function MobileMenu() {
               href="tel:0321000000"
               className="block bg-[#0f5e3e] text-white text-center py-3 rounded-sm font-semibold hover:bg-[#1a7a52] transition"
             >
-              📞 03 21 00 00 00
+              ðŸ“ž 03 21 00 00 00
             </a>
           </div>
         </nav>
