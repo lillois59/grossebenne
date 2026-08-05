@@ -71,7 +71,7 @@ export default function MobileMenu() {
               href="tel:0321000000"
               className="block bg-[#0f5e3e] text-white text-center py-3 rounded-sm font-semibold hover:bg-[#1a7a52] transition"
             >
-              ðŸ“ž 03 21 00 00 00
+              +33 6 42 24 08 41
             </a>
           </div>
         </nav>
