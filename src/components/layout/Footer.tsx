@@ -149,12 +149,9 @@ export default function Footer() {
               </li>
 
               <li>
-                <a
-                  href="mailto:contact@nordbennes.fr"
-                  className="hover:text-white transition"
-                >
-                  contact@nordbennes.fr
-                </a>
+                <span className="text-gray-400">
+  contact@nordbennes.fr
+</span>
               </li>
             </ul>
 

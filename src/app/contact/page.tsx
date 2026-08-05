@@ -38,12 +38,9 @@ export default function ContactPage() {
                   Email
                 </h3>
 
-                <a
-                  href="mailto:contact@nordbennes.fr"
-                  className="text-[#0f5e3e] font-medium"
-                >
-                  contact@nordbennes.fr
-                </a>
+                <span className="text-[#0f5e3e] font-medium">
+                contact@nordbennes.fr
+                </span>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-sm">
