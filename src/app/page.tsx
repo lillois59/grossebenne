@@ -289,7 +289,7 @@ export default function Home() {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#0f5e3e]">1 500+</div>
+              <div className="text-4xl font-bold text-[#0f5e3e]">25+</div>
               <p className="text-sm text-gray-500 mt-1">Bennes livrées</p>
             </div>
 
