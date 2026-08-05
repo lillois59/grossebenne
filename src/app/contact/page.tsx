@@ -8,6 +8,7 @@ export default function ContactPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
               Contactez-nous
             </h1>
+
             <p className="text-lg text-gray-500">
               Une question ? Un devis ? Notre équipe est à votre disposition
             </p>
@@ -39,7 +40,7 @@ export default function ContactPage() {
                 </h3>
 
                 <span className="text-[#0f5e3e] font-medium">
-                contact@nordbennes.fr
+                  contact@nordbennes.fr
                 </span>
               </div>
 
@@ -53,22 +54,43 @@ export default function ContactPage() {
                 </p>
 
                 <p className="text-xs text-gray-400 mt-1">
-                  * Adresse fictive à remplacer
+                  Adresse à remplacer par l’adresse réelle
                 </p>
               </div>
             </div>
 
             {/* Formulaire */}
             <div className="lg:col-span-2 bg-gray-50 p-8 rounded-sm">
-              <form className="space-y-4">
+              <form
+                action="https://formspree.io/f/mdenoloe"
+                method="POST"
+                className="space-y-4"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nouveau message depuis NordBennes.fr"
+                />
+
+                <input
+                  type="hidden"
+                  name="origine_formulaire"
+                  value="Page contact NordBennes.fr"
+                />
+
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                    <label
+                      htmlFor="contact-prenom"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
                       Prénom
                     </label>
 
                     <input
+                      id="contact-prenom"
                       type="text"
+                      name="prenom"
                       className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition"
                       placeholder="Prénom"
                       required
@@ -76,12 +98,17 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                    <label
+                      htmlFor="contact-nom"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
                       Nom
                     </label>
 
                     <input
+                      id="contact-nom"
                       type="text"
+                      name="nom"
                       className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition"
                       placeholder="Nom"
                       required
@@ -90,12 +117,17 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="contact-email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
                     Email
                   </label>
 
                   <input
+                    id="contact-email"
                     type="email"
+                    name="email"
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition"
                     placeholder="email@exemple.fr"
                     required
@@ -103,15 +135,57 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="contact-telephone"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Téléphone
+                  </label>
+
+                  <input
+                    id="contact-telephone"
+                    type="tel"
+                    name="telephone"
+                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition"
+                    placeholder="06 00 00 00 00"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="contact-message"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
                     Message
                   </label>
 
                   <textarea
+                    id="contact-message"
+                    name="message"
                     rows={4}
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm text-sm focus:ring-1 focus:ring-[#0f5e3e] focus:border-[#0f5e3e] outline-none transition"
                     placeholder="Votre message..."
+                    required
                   ></textarea>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <input
+                    id="contact-consentement"
+                    type="checkbox"
+                    name="consentement"
+                    value="Accepté"
+                    required
+                    className="mt-1 w-4 h-4 border-gray-300 rounded-sm focus:ring-[#0f5e3e]"
+                  />
+
+                  <label
+                    htmlFor="contact-consentement"
+                    className="text-sm text-gray-500"
+                  >
+                    J&apos;accepte que mes données soient utilisées pour le
+                    traitement de ma demande.
+                  </label>
                 </div>
 
                 <button
